@@ -3,6 +3,7 @@ Implementation of AVAssetResourceLoader custom class which can be useful while c
 
 ## Usage
 
+```
 AVURLAsset *asset ;
 assetLoader = [[AssetLoaderDelegate alloc] init];
 assetLoader.fileUrl = self.compilation.VideoUrl;
@@ -15,3 +16,5 @@ asset = [AVURLAsset URLAssetWithURL:[self url:[NSURL URLWithString:urlString] Wi
     components.scheme = scheme;
     return [components URL];
 }
+
+```
