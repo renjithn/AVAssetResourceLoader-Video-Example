@@ -7,7 +7,7 @@ Implementation of AVAssetResourceLoader custom class which can be useful while c
 AVURLAsset *asset ;
 assetLoader = [[AssetLoaderDelegate alloc] init];
 assetLoader.fileUrl = self.videoURL ; //S3 url in this case
-asset = [AVURLAsset URLAssetWithURL:[self url:[NSURL URLWithString:urlString] WithCustomScheme:@"streaming"] options:nil];
+asset = [AVURLAsset URLAssetWithURL:[self url:self.videoURL WithCustomScheme:@"streaming"] options:nil];
 [asset.resourceLoader setDelegate:assetLoader queue:dispatch_get_main_queue()];
 
 
