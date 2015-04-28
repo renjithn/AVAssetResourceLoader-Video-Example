@@ -1,7 +1,7 @@
 # AVAssetResourceLoader-Video-Example
 Implementation of AVAssetResourceLoader custom class which can be useful while caching cideos while streaming
 
-Usage
+## Usage
 
 AVURLAsset *asset ;
 assetLoader = [[AssetLoaderDelegate alloc] init];
